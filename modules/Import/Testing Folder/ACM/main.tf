@@ -1,4 +1,4 @@
-resource "aws_acm_certificate" "expand-network" {
-  domain_name       = "*.expand.network"  # Replace with your domain name
+resource "aws_acm_certificate" "harishankar-network" {
+  domain_name       = "*.harishankar.network"  # Replace with your domain name
   validation_method = "DNS"
 }
