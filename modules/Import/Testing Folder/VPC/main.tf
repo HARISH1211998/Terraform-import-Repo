@@ -14,29 +14,29 @@ provider "aws" {
 # 1
 # Main VPC
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc
-resource "aws_vpc" "harishankar.xyz-VPC" {
+resource "aws_vpc" "Expand-Network-VPC" {
   cidr_block = "10.0.0.0/16"
 
   tags = {
-    Name = "harishankar.xyz-VPC"
+    Name = "Expand-Network-VPC"
   }
 }
 
 # 2
 # Public Subnet with Default Route to Internet Gateway
-resource "aws_subnet" "harishankar.xyz-Public-Subnet-AZ-A" {
-  vpc_id     = aws_vpc.harishankar.xyz-VPC.id
+resource "aws_subnet" "Expand-Network-Public-Subnet-AZ-A" {
+  vpc_id     = aws_vpc.Expand-Network-VPC.id
   cidr_block = "10.0.1.0/24"
 
   tags = {
-    Name = "harishankar.xyz-Public-Subnet-AZ-A"
+    Name = "Expand-Network-Public-Subnet-AZ-A"
   }
 }
 
-resource "aws_internet_gateway" "harishankar.xyz-Internet-Gateway" {
-  vpc_id = aws_vpc.harishankar.xyz-VPC.id
+resource "aws_internet_gateway" "Expand-Network-Internet-Gateway" {
+  vpc_id = aws_vpc.Expand-Network-VPC.id
 
   tags = {
-    Name = "harishankar.xyz-Internet-Gateway"
+    Name = "Expand-Network-Internet-Gateway"
   }
 }
