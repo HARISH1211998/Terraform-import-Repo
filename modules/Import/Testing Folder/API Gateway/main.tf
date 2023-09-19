@@ -1,4 +1,4 @@
-resource "aws_api_gateway_rest_api" "test-Expand-Network" {
-  name        = "test-Expand-Network"
-  description = "test-Expand-Network"
+resource "aws_api_gateway_rest_api" "test-harishankar" {
+  name        = "test-harishankar"
+  description = "test-harishankar"
 }
