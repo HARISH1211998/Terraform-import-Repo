@@ -8,5 +8,5 @@ terraform {
 }
 
 resource "aws_grafana_workspace" "API-Key-Monitoring-Dashboard" {
-  id = "g-d72959008e"
+  id = "g-1a123b"
 }
